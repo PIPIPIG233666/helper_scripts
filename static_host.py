@@ -27,8 +27,10 @@ for mac, ip in zip(mac_addresses, ip_addresses):
 
 # Print additional list src_ip entries
 for src_ip in ip_addresses:
-    print(f"    list src_ip '{src_ip}'")
+    print(f"        list src_ip ' '{src_ip}'")
+
+print()
 
 # Print the final option dest_ip entry
 for src_ip in ip_addresses:
-    print(f"    option dest_ip '{src_ip}'")
+    print(f"        option dest_ip '{src_ip}'")

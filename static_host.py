@@ -24,3 +24,11 @@ def print_config(mac, ip):
 # Loop through the arrays and print the configuration for each entry
 for mac, ip in zip(mac_addresses, ip_addresses):
     print_config(mac, ip)
+
+# Print additional list src_ip entries
+for src_ip in ip_addresses:
+    print(f"    list src_ip '{src_ip}'")
+
+# Print the final option dest_ip entry
+for src_ip in ip_addresses:
+    print(f"    option dest_ip '{src_ip}'")

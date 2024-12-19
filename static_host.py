@@ -33,4 +33,4 @@ print("\n")
 
 # Print the final option dest_ip entry
 for src_ip in ip_addresses:
-    print(f"                option dest_ip '{src_ip}'")
+    print(f"                list dest_ip '{src_ip}'")

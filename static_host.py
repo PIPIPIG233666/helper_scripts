@@ -39,7 +39,7 @@ outbound_rule_str = (
     "\tlist dest_port '!=80'\n"
     "\tlist dest_port '!=443'\n"
     "\toption class 'cs5'\n"
-    "\toption counter '1'"
+    "\toption counter '1'\n"
 )
 outbound_src_ip_str = "\n".join([f"\tlist src_ip '{src_ip}'" for src_ip in ip_addresses])
 outbound_rule_str += f"{outbound_src_ip_str}\n\toption enabled '1'"
@@ -53,7 +53,7 @@ inbound_rule_str = (
     "\tlist src_port '!=80'\n"
     "\tlist src_port '!=443'\n"
     "\toption class 'cs5'\n"
-    "\toption counter '1'"
+    "\toption counter '1'\n"
 )
 inbound_src_ip_str = "\n".join([f"\tlist dest_ip '{src_ip}'" for src_ip in ip_addresses])
 inbound_rule_str += f"{inbound_src_ip_str}\n\toption enabled '1'"
